@@ -1,0 +1,1 @@
+# Docker Engine release 19.03.0+ requiredversion: "3.8"services:  # zk服务器  clickhouse_zookeeper:    image: zookeeper:3.5.8    ports:    - 2181:2181

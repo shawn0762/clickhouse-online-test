@@ -1,0 +1,1 @@
+# Docker Engine release 19.03.0+ requiredversion: "3.8"services:  # 分片1的副本1  ck-s01-r01:    image: yandex/clickhouse-server:20.4    volumes:    - ./conf/cluster-config.xml:/etc/clickhouse-server/config.d/cluster-config.xml    - ./conf/s01-r01.xml:/etc/clickhouse-server/config.d/macros.xml    - /data/clickhouse:/var/lib/clickhouse    ports:    - 9000:9000
